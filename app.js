@@ -5,15 +5,12 @@ let message = document.getElementById("message");
 function diceGame(number) {
   userNumber.innerText = number;
   let randomNumber = Math.ceil(Math.random() * 6);
-resultNumber.innerText= number
-if(number == randomNumber){
-    message.innerText= "Congrats ! You Win"
-    message.style.color = "green"
-
-}
-else{
-    message.innerText = "Sorry, You Loose "
-    message.style.color = "red"
-}
-
+  resultNumber.innerText = randomNumber;
+  if (number == randomNumber) {
+    message.innerText = "Congrats ! You Win";
+    message.style.color = "green";
+  } else {
+    message.innerText = "Sorry, You Loose ";
+    message.style.color = "red";
+  }
 }

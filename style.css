@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: yellowgreen;
+    color: #fff;
+}
 .heading{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 120px;
+    color: blue;
 }
 .heroSection{
     display: flex;
@@ -23,7 +28,7 @@ border: 1px solid #000;
 height: 350px;
 }
     button{
-    width: 120px;
+    width: 120px ;
 height: 120px;
 font-size: 30px;
 background: #fff;;
@@ -47,4 +52,30 @@ align-items: center;
     .message{
         display: flex;
         justify-content: center;
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 1100px) {
+    .heroSection{
+        flex-direction: column;
+        margin-inline: auto;
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 1100px) {
+
+
+
+
+    }
+
+    
+    
+    
     }
